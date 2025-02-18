@@ -1,5 +1,5 @@
 let btn = document.querySelector("button");
-let 
+counter.textContent =
 btn.addEventListener("click", function changeColor() {
   let color =
     "rgb(" +
