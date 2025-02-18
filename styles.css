@@ -97,7 +97,6 @@ button {
     align-items: center;
     position: relative;
   }
-  .counter
   .reset {
     position: absolute;
     bottom: 0px;
