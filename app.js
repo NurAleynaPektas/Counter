@@ -31,8 +31,8 @@ let counter = document.querySelector(".counter");
 const counterChange = () => {
   let numbercounter = parseInt(counter.textContent);
   numbercounter += 1;
-  localStorage.setItem("counter", numbercounter);
   counter.textContent = numbercounter;
+  localStorage.setItem("counter", numbercounter);
 
   // @murselsen
   // 350 ms titreşim verir
@@ -40,7 +40,6 @@ const counterChange = () => {
   // IOS bilmiyorum :(
   navigator.vibrate(350); // titreşim süresine arttırılabilir.
 };
-counter.addEventListener("click", counterChange);
 
 const counterArea = document.querySelector(".btn");
 counterArea.addEventListener("click", counterChange);
