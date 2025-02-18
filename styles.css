@@ -81,4 +81,4 @@ button {
   gap: 5px;
 }
 
-@media ()
+@media (max-width: 375px)
