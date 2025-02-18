@@ -33,9 +33,8 @@ counter.addEventListener("click", function count() {
 
   // @murselsen
   // 100 ms titreşim verir
-  // Sadece Android Tarayıcı  kullanılabilir
-  navigator.vibrate(100); 
-
+  // Sadece Android Tarayıcı uygulamalarında kullanılabilir
+  navigator.vibrate(100); // 
 });
 
 let reset = document.querySelector(".reset");
