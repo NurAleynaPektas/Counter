@@ -31,7 +31,7 @@ counter.addEventListener("click", function count() {
   numbercounter += 1;
   counter.textContent = numbercounter;
   console.log(window);
-  console.log(navigator);
+  console.log(navigator.vibrate);
   window.navigator.vibrate(15000);
   if ("vibrate" in navigator) {
     alert("Titreşim destekleniyor!");
