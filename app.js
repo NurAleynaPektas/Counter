@@ -31,7 +31,7 @@ counter.addEventListener("click", function count() {
   numbercounter += 1;
   counter.textContent = numbercounter;
   console.log(window.navigator);
-  window.navigator.vibrate(500);
+  window.navigator.vibrate(15000);
 });
 
 let reset = document.querySelector(".reset");
