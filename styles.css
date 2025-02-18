@@ -83,8 +83,7 @@ button {
 
 /* Github User: @murselsen */
 @media (max-width: 376px) {
-  .reset {
-    position: absolute;
-    right: 10%;
+  .btn{
+    
   }
 }
