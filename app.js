@@ -36,6 +36,7 @@ const counterChange = () => {
   navigator.vibrate(100); // titreşim süresine arttırılabilir.
 };
 counter.addEventListener("click", counterChange);
+document.addEventListener("click", counterChange);
 
 let reset = document.querySelector(".reset");
 reset.addEventListener("click", function reset() {
