@@ -90,7 +90,8 @@ button {
     margin-top: 30px;
     font-size: 23px;
     padding: 10px;
-    left: 30%;
+    position: static;
+    ali
   }
   .btn {
     height: 100%;
