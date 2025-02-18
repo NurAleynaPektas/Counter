@@ -27,14 +27,7 @@ setInterval(() => {
 let counter = document.querySelector(".counter");
 
 counter.addEventListener("click", function count() {
-  let numbercounter = parseInt(counter.textContent);
-  numbercounter += 1;
-  counter.textContent = numbercounter;
-
-  // @murselsen
-  // 100 ms titreşim verir
-  // Sadece Android Tarayıcı uygulamalarında kullanılabilir
-  navigator.vibrate(100); // titreşim süresine arttırılabilir.
+  
 });
 
 let reset = document.querySelector(".reset");
