@@ -92,7 +92,8 @@ button {
   }
   .btn {
     border: 1px solid white;
-    height: 100vh;
+    height: 100%;
     align-items: center;
+    position: relative;
   }
 }
