@@ -45,5 +45,5 @@ counterArea.addEventListener("click", counterChange);
 
 let reset = document.querySelector(".reset");
 reset.addEventListener("click", function reset() {
-  counter.textContent = 0;
+  counter.textContent = -1;
 });
