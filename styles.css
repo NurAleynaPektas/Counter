@@ -82,8 +82,8 @@ button {
 }
 
 /* Github User: @murselsen */
-@media (max-width: 376px) {
-  .btn{
-    
+@media (max-width: 400px) {
+  .btn {
+    border: 1px solid white;
   }
 }
