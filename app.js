@@ -1,6 +1,7 @@
 let btn = document.querySelector("button");
-document.querySelector(".counter").textContent =
-  localStorage.getItem("counter") || ;
+document.querySelector(".counter").textContent = localStorage.getItem("counter")
+  ? localStorage.getItem("counter")
+  : 0;
 btn.addEventListener("click", function changeColor() {
   let color =
     "rgb(" +
