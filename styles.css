@@ -7,19 +7,20 @@ body {
   top: auto;
   font-family: "Dancing Script", serif;
   color: darkslategray;
+  user-select: none;
+}
 
-  button {
-    background-color: inherit;
-    width: 300px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    cursor: pointer;
-    border: 2px dashed yellow;
-    margin-bottom: 10px;
-  }
+button {
+  background-color: inherit;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 2px dashed yellow;
+  margin-bottom: 10px;
 }
 
 .main-container {
@@ -44,6 +45,7 @@ body {
   border: 2px dashed yellow;
   border-radius: 50px;
   width: 100px;
+
   height: 40px;
   left: 180px;
   color: darkslategray;
@@ -55,8 +57,12 @@ body {
   justify-content: center;
   border: 2px dashed yellow;
   border-radius: 100px;
-  width: 100px;
-  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  width: max-content;
+  max-width: fit-content;
+
+  height: max-content;
   font-size: 35px;
   margin-left: 95px;
   margin-top: 20px;
@@ -78,4 +84,30 @@ body {
   display: flex;
   flex-direction: row;
   gap: 5px;
+}
+
+/* Github User: @murselsen */
+@media (max-width: 400px) {
+  .main-container {
+    height: 80%;
+  }
+  .clock-container {
+    margin-top: 30px;
+    font-size: 23px;
+    padding: 10px;
+    position: static;
+    align-self: center;
+  }
+  .btn {
+    height: 100%;
+    align-items: center;
+    position: relative;
+  }
+  .reset {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+    font-size: 23px;
+  }
 }
