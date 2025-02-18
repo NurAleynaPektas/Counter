@@ -32,6 +32,11 @@ counter.addEventListener("click", function count() {
   counter.textContent = numbercounter;
   console.log(window.navigator);
   window.navigator.vibrate(15000);
+  if ("vibrate" in navigator) {
+    console.log("Titreşim destekleniyor!");
+  } else {
+    console.log("Cihaz titreşimi desteklemiyor.");
+  }
 });
 
 let reset = document.querySelector(".reset");
