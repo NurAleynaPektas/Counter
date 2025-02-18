@@ -57,6 +57,8 @@ button {
   justify-content: center;
   border: 2px dashed yellow;
   border-radius: 100px;
+  min-width: 100px;
+  min-height: 100px;
   width: max-content;
   max-width: fit-content;
   padding: 30px;
