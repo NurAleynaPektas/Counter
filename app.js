@@ -31,6 +31,7 @@ let counter = document.querySelector(".counter");
 const counterChange = () => {
   let numbercounter = parseInt(counter.textContent);
   numbercounter += 1;
+  local
   counter.textContent = numbercounter;
 
   // @murselsen
