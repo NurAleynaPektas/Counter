@@ -41,7 +41,11 @@ counter.addEventListener("click", counterChange);
 
 const counterArea = document.querySelector(".btn");
 counterArea.addEventListener("click", counterChange);
-counterArea.addEventListener("mousedown", counterChange);
+counterArea.addEventListener("mousedown", () => {
+  setInterval(() => {
+    console.log("Butona basılı tutuluyor...");
+  }, 100);
+});
 
 let reset = document.querySelector(".reset");
 reset.addEventListener("click", function reset() {
