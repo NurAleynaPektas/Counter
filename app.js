@@ -25,7 +25,7 @@ setInterval(() => {
 }, 1000);
 
 let counter = document.querySelector(".counter");
-
+const counter
 counter.addEventListener("click", function count() {
   
 });
