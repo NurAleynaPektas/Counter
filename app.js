@@ -30,6 +30,8 @@ counter.addEventListener("click", function count() {
   let numbercounter = parseInt(counter.textContent);
   numbercounter += 1;
   counter.textContent = numbercounter;
+
+  // @murselsen
   // 100 ms titreşim verir
   // 
   navigator.vibrate(100); 
