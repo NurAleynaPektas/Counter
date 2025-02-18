@@ -26,7 +26,7 @@ setInterval(() => {
     new Date().toLocaleTimeString("tr-TR", { timeZone: "Europe/Istanbul" });
 }, 1000);
 
-let counter = document.querySelector(".counter span");
+let counter = document.querySelector(".counter");
 
 const counterChange = () => {
   let numbercounter = parseInt(counter.textContent);
