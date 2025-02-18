@@ -33,7 +33,7 @@ counter.addEventListener("click", function count() {
 
   // @murselsen
   // 100 ms titreşim verir
-  // Sadece Android
+  // Sadece Android Tarayıcı  kullanılabilir
   navigator.vibrate(100); 
 
 });
