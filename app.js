@@ -31,9 +31,9 @@ const counterChange = () => {
   counter.textContent = numbercounter;
 
   // @murselsen
-  // 100 ms titreşim verir
+  // 500 ms titreşim verir
   // Sadece Android Tarayıcı uygulamalarında kullanılabilir
-  navigator.vibrate(100); // titreşim süresine arttırılabilir.
+  navigator.vibrate(500); // titreşim süresine arttırılabilir.
 };
 counter.addEventListener("click", counterChange);
 document.addEventListener("click", counterChange);
