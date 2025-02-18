@@ -1,5 +1,7 @@
 let btn = document.querySelector("button");
-
+document.querySelector(".counter").textContent = localStorage.getItem("counter")
+  ? localStorage.getItem("counter")
+  : 0;
 btn.addEventListener("click", function changeColor() {
   let color =
     "rgb(" +
@@ -26,13 +28,23 @@ setInterval(() => {
 
 let counter = document.querySelector(".counter span");
 
-counter.addEventListener("click", function count() {
+const counterChange = () => {
   let numbercounter = parseInt(counter.textContent);
   numbercounter += 1;
   counter.textContent = numbercounter;
-});
+  localStorage.setItem("counter", numbercounter);
+
+  // @murselsen
+  // 350 ms titreşim verir
+  // Android Tarayıcı uygulamalarında kullanılabilir
+  // IOS bilmiyorum :(
+  navigator.vibrate(350); // titreşim süresine arttırılabilir.
+};
+
+const counterArea = document.querySelector(".btn");
+counterArea.addEventListener("click", counterChange);
 
 let reset = document.querySelector(".reset");
 reset.addEventListener("click", function reset() {
-  counter.textContent = 0;
+  counter.textContent = -1;
 });
