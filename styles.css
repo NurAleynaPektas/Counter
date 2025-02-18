@@ -88,6 +88,7 @@ button {
   }
   .clock-container {
     font-size: 20px;
+    padding: 10px;
   }
   .btn {
     /* border: 1px solid white; */
