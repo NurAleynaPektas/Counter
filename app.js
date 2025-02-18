@@ -33,12 +33,7 @@ const counterChange = () => {
   numbercounter += 1;
   counter.textContent = numbercounter;
   localStorage.setItem("counter", numbercounter);
-  if ("vibrate" in navigator) {
-    // 500ms titreşim
-    alert("Telefon titreşmesi çalıştırıldı!");
-  } else {
-    alert("Cihaz titreşimi desteklemiyor.");
-  }
+
   // @murselsen
   // 350 ms titreşim verir
   // Android Tarayıcı uygulamalarında kullanılabilir
