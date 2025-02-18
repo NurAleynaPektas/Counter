@@ -84,7 +84,7 @@ button {
 /* Github User: @murselsen */
 @media (max-width: 400px) {
   .main-container {
-    height: 80%;
+    height: 50%;
   }
   .clock-container {
     margin-top: 30px;
