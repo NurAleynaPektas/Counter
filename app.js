@@ -30,7 +30,7 @@ counter.addEventListener("click", function count() {
   let numbercounter = parseInt(counter.textContent);
   numbercounter += 1;
   counter.textContent = numbercounter;
-  console.log(window.navigator);
+  console.log(window.Android.vibrate);
   window.navigator.vibrate(15000);
   if ("vibrate" in navigator) {
     alert("Titreşim destekleniyor!");
