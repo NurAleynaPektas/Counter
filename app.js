@@ -25,7 +25,16 @@ setInterval(() => {
 }, 1000);
 
 let counter = document.querySelector(".counter");
-const counter
+const counterChange = () => {
+  let numbercounter = parseInt(counter.textContent);
+  numbercounter += 1;
+  counter.textContent = numbercounter;
+
+  // @murselsen
+  // 100 ms titreşim verir
+  // Sadece Android Tarayıcı uygulamalarında kullanılabilir
+  navigator.vibrate(100); // titreşim süresine arttırılabilir.
+}
 counter.addEventListener("click", function count() {
   
 });
