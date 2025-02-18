@@ -9,18 +9,17 @@ body {
   color: darkslategray;
 }
 
-  button {
-    background-color: inherit;
-    width: 300px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    cursor: pointer;
-    border: 2px dashed yellow;
-    margin-bottom: 10px;
-  }
+button {
+  background-color: inherit;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 2px dashed yellow;
+  margin-bottom: 10px;
 }
 
 .main-container {
