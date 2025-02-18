@@ -86,6 +86,9 @@ button {
   .main-container {
     height: 80%;
   }
+  .clock-container {
+    font-size: 20px;
+  }
   .btn {
     /* border: 1px solid white; */
     height: 100%;
