@@ -91,7 +91,7 @@ button {
     font-size: 23px;
     padding: 10px;
     position: static;
-    ali
+    justify-items: center;
   }
   .btn {
     height: 100%;
