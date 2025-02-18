@@ -83,6 +83,9 @@ button {
 
 /* Github User: @murselsen */
 @media (max-width: 400px) {
+  .main-container {
+    height: 80%;
+  }
   .btn {
     border: 1px solid white;
     height: 100%;
