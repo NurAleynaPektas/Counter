@@ -30,7 +30,7 @@ counter.addEventListener("click", function count() {
   let numbercounter = parseInt(counter.textContent);
   numbercounter += 1;
   counter.textContent = numbercounter;
-  navigator.vibrate(100);
+  navigator.vibrate(100); // 100 ms titreşim verir
 });
 
 let reset = document.querySelector(".reset");
