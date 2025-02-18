@@ -30,14 +30,8 @@ counter.addEventListener("click", function count() {
   let numbercounter = parseInt(counter.textContent);
   numbercounter += 1;
   counter.textContent = numbercounter;
-  console.log(browser);
-  console.log(navigator.vibrate);
-  window.navigator.vibrate(15000);
-  if ("vibrate" in navigator) {
-    alert("Titreşim destekleniyor!");
-  } else {
-    alert("Cihaz titreşimi desteklemiyor.");
-  }
+
+  navigator.vibrate([200, 100, 200, 100, 500]);
 });
 
 let reset = document.querySelector(".reset");
