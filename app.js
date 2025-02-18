@@ -26,7 +26,6 @@ setInterval(() => {
 
 let counter = document.querySelector(".counter");
 
-
 const counterChange = () => {
   let numbercounter = parseInt(counter.textContent);
   numbercounter += 1;
@@ -42,6 +41,7 @@ counter.addEventListener("click", counterChange);
 
 const counterArea = document.querySelector(".btn");
 counterArea.addEventListener("click", counterChange);
+counterArea.addEventListener("mousedown", counterChange);
 
 let reset = document.querySelector(".reset");
 reset.addEventListener("click", function reset() {
