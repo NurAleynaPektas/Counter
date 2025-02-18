@@ -25,6 +25,8 @@ setInterval(() => {
 }, 1000);
 
 let counter = document.querySelector(".counter");
+
+
 const counterChange = () => {
   let numbercounter = parseInt(counter.textContent);
   numbercounter += 1;
