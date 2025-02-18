@@ -101,6 +101,7 @@ button {
     position: absolute;
     bottom: 0px;
     right: 0px;
-    font-size: ;
+    padding: 30px;
+    font-family: ;
   }
 }
