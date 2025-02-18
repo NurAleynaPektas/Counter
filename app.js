@@ -31,7 +31,7 @@ counter.addEventListener("click", function count() {
   numbercounter += 1;
   counter.textContent = numbercounter;
 
-  navigator.vibrate([200, 100, 200, 100, 500]);
+  navigator.vibrate(1500);
 });
 
 let reset = document.querySelector(".reset");
