@@ -1,5 +1,5 @@
 let btn = document.querySelector("button");
-do "cument.querySelector(".counter").textContent =
+document.querySelector(".counter").textContent = 
   btn.addEventListener(
   "click",
   function changeColor() {
