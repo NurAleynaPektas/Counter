@@ -87,7 +87,8 @@ button {
     height: 80%;
   }
   .btn {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 100%;
+    align-items: center;
   }
 }
