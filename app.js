@@ -33,7 +33,7 @@ const counterChange = () => {
   // @murselsen
   // 350 ms titreşim verir
   // Android Tarayıcı uygulamalarında kullanılabilir
-  // IOS bilmiyorum
+  // IOS bilmiyorum :(
   navigator.vibrate(350); // titreşim süresine arttırılabilir.
 };
 counter.addEventListener("click", counterChange);
