@@ -1,26 +1,24 @@
 let btn = document.querySelector("button");
-document.querySelector(".counter").textContent = 
-  btn.addEventListener(
-  "click",
-  function changeColor() {
-    let color =
-      "rgb(" +
-      Math.round(Math.random() * 255) +
-      "," +
-      Math.round(Math.random() * 255) +
-      "," +
-      Math.round(Math.random() * 255) +
-      ")";
-    btn.style.backgroundColor = color;
-    console.log(`Renginiz : ${color}`);
-    let hours = document.querySelector(".clock-container");
-    hours.style.color = color;
-    let counter = document.querySelector(".counter");
-    counter.style.color = color;
-    let reset = document.querySelector(".reset");
-    reset.style.color = color;
-  }
-);
+document.querySelector(".counter").textContent =
+  localStorage.getItem("counter") || ;
+btn.addEventListener("click", function changeColor() {
+  let color =
+    "rgb(" +
+    Math.round(Math.random() * 255) +
+    "," +
+    Math.round(Math.random() * 255) +
+    "," +
+    Math.round(Math.random() * 255) +
+    ")";
+  btn.style.backgroundColor = color;
+  console.log(`Renginiz : ${color}`);
+  let hours = document.querySelector(".clock-container");
+  hours.style.color = color;
+  let counter = document.querySelector(".counter");
+  counter.style.color = color;
+  let reset = document.querySelector(".reset");
+  reset.style.color = color;
+});
 
 setInterval(() => {
   document.querySelector(".clock-container").textContent =
