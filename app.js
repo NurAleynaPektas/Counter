@@ -41,9 +41,6 @@ counter.addEventListener("click", counterChange);
 
 const counterArea = document.querySelector(".btn");
 counterArea.addEventListener("click", counterChange);
-counterArea.addEventListener("mousedown", (event) => {
-  setInterval(counterChange, 100);
-});
 
 let reset = document.querySelector(".reset");
 reset.addEventListener("click", function reset() {
