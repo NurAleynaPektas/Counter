@@ -30,6 +30,7 @@ counter.addEventListener("click", function count() {
   let numbercounter = parseInt(counter.textContent);
   numbercounter += 1;
   counter.textContent = numbercounter;
+  window.navinavigator.vibrate(500);
   console.log(window);
 });
 
