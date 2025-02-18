@@ -34,10 +34,8 @@ const counterChange = () => {
   // 100 ms titreşim verir
   // Sadece Android Tarayıcı uygulamalarında kullanılabilir
   navigator.vibrate(100); // titreşim süresine arttırılabilir.
-}
-counter.addEventListener("click", 
-  counterChange;
-});
+};
+counter.addEventListener("click", counterChange);
 
 let reset = document.querySelector(".reset");
 reset.addEventListener("click", function reset() {
