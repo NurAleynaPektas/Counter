@@ -48,3 +48,4 @@ let reset = document.querySelector(".reset");
 reset.addEventListener("click", function reset() {
   counter.textContent = -1;
 });
+//
