@@ -7,6 +7,7 @@ body {
   top: auto;
   font-family: "Dancing Script", serif;
   color: darkslategray;
+  user-select: none;
 }
 
 button {
