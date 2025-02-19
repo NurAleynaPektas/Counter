@@ -19,6 +19,8 @@ btn.addEventListener("click", function changeColor() {
   counter.style.color = color;
   let reset = document.querySelector(".reset");
   reset.style.color = color;
+  let cumle = document.querySelector(".cumle");
+  cumle.style.color = color;
 });
 
 setInterval(() => {
@@ -53,4 +55,32 @@ reset.addEventListener("click", function () {
   } else {
   }
 });
-//
+
+// Cümlelerin listesi
+const cumleler = [
+  "Allah'ım, sana hamd olsun.",
+  "Subhanallah, her şey senin kudretindedir.",
+  "La ilahe illallah, yalnızca Sen varsın.",
+  "Bismillah, her işin başı Senin adındır.",
+  "Allah'ın rahmeti üzerimize olsun.",
+  "Ya Allah, yardımınla her zorluğu aşarım.",
+  "Rabbiniz, affedicidir, rahmet sahibidir.",
+  "Şükredenlerin kalbi huzurludur.",
+  "Zorluklarla birlikte kolaylık vardır.",
+  "Allah, sabredenlerle beraberdir.",
+  "Şüphesiz Allah, çok bağışlayandır, çok merhamet edendir.",
+  "Eğer onlar gerçekten Allah’a tövbe ederlerse, Allah da onları affeder.",
+  "O, tövbe edenleri kabul eder ve günahları bağışlar.",
+];
+
+// Bugünün tarihini al
+const today = new Date();
+
+// Bugünün yıl, ay, ve günü ile bir sayıya ulaş (örneğin 2025-02-20 için 2025 + 2 + 20)
+const dayIndex = today.getFullYear() + today.getMonth() + today.getDate();
+
+// Diziden cümleyi seç (mod 7 ile, 7 cümle olduğunda her gün için farklı cümle)
+const selectedCumle = cumleler[dayIndex % cumleler.length];
+
+// Cümleyi div içine yerleştir
+document.querySelector(".cumle").innerText = selectedCumle;
