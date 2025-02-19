@@ -38,7 +38,7 @@ const counterChange = () => {
   // 350 ms titreşim verir
   // Android Tarayıcı uygulamalarında kullanılabilir
   // IOS bilmiyorum :(
-  navigator.vibrate(300); // titreşim süresine arttırılabilir.
+  navigator.vibrate(500); // titreşim süresine arttırılabilir.
 };
 
 const counterArea = document.querySelector(".counter");
