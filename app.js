@@ -38,13 +38,17 @@ const counterChange = () => {
   // 350 ms titreşim verir
   // Android Tarayıcı uygulamalarında kullanılabilir
   // IOS bilmiyorum :(
-  navigator.vibrate(350); // titreşim süresine arttırılabilir.
+  navigator.vibrate(300); // titreşim süresine arttırılabilir.
 };
 
-const counterArea = document.querySelector(".btn");
+const counterArea = document.querySelector(".counter");
 counterArea.addEventListener("click", counterChange);
 
 let reset = document.querySelector(".reset");
-reset.addEventListener("click", function reset() {
-  counter.textContent = -1;
+reset.addEventListener("click", function () {
+  let isConfirmed = window.confirm("Çıkış yapmak istediğinize eminmisiniz?");
+  if (isConfirmed) {
+    counter.textContent = 0;
+  } else {
+  }
 });
