@@ -32,13 +32,14 @@ const counterChange = () => {
   let numbercounter = parseInt(counter.textContent);
   numbercounter += 1;
   counter.textContent = numbercounter;
+  navigator.vibrate(350);
   localStorage.setItem("counter", numbercounter);
 
   // @murselsen
   // 350 ms titreşim verir
   // Android Tarayıcı uygulamalarında kullanılabilir
   // IOS bilmiyorum :(
-  navigator.vibrate(500); // titreşim süresine arttırılabilir.
+  // titreşim süresine arttırılabilir.
 };
 
 const counterArea = document.querySelector(".counter");
