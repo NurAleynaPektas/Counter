@@ -32,7 +32,7 @@ const counterChange = () => {
   let numbercounter = parseInt(counter.textContent);
   numbercounter += 1;
   counter.textContent = numbercounter;
-  navigator.vibrate(350);
+  navigator.vibrate(250);
   localStorage.setItem("counter", numbercounter);
 
   // @murselsen
