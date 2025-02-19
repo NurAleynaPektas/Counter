@@ -46,7 +46,7 @@ counterArea.addEventListener("click", counterChange);
 
 let reset = document.querySelector(".reset");
 reset.addEventListener("click", function () {
-  let isConfirmed = window.confirm("Çıkış yapmak istediğinize eminmisiniz?");
+  let isConfirmed = window.confirm("Reset'lemek istediğinize eminmisiniz?");
   if (isConfirmed) {
     counter.textContent = 0;
   } else {
