@@ -88,8 +88,7 @@ button {
 .cumle {
   width: auto;
   height: auto;
-  border: 2px dashed yellow;
-  border-radius: 50px;
+
   display: flex;
   align-items: center;
   justify-content: center;
