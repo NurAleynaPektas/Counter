@@ -103,13 +103,13 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 35px;
+    margin-left: 15px;
   }
   .clock-container {
     font-size: 15px;
     padding: 3px;
     position: static;
-    margin-left: 255px;
+    margin-left: 220px;
     width: 70px;
     height: 40px;
     border-radius: 50px;
@@ -121,7 +121,7 @@ button {
   }
   .counter {
     margin-bottom: 110px;
-    margin-left: 115px;
+    margin-left: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
