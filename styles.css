@@ -121,7 +121,7 @@ button {
   }
   .counter {
     margin-bottom: 110px;
-    margin-left: 90px;
+    margin-left: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +129,7 @@ button {
   .reset {
     position: absolute;
 
-    right: 25px;
+    right: 20px;
     padding: 10px;
     font-size: 23px;
     margin-bottom: 60px;
