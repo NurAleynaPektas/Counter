@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  background-color: rgb(39, 38, 38);
+  background-color: rgb(248, 241, 241);
   display: grid;
   place-items: center;
   height: 100vh;
   top: auto;
   font-family: "Dancing Script", serif;
-  color: darkslategray;
+  color: rgb(11, 62, 62);
   user-select: none;
 }
 
@@ -19,7 +19,7 @@ button {
   align-items: center;
   border-radius: 100px;
   cursor: pointer;
-  border: 2px dashed yellow;
+  border: 4px dashed rgb(29, 1, 98);
   margin-bottom: 10px;
 }
 
@@ -42,14 +42,14 @@ button {
   justify-content: center;
   gap: 20px;
   font-size: 15px;
-  border: 2px dashed yellow;
+  border: 4px dashed rgb(29, 1, 98);
   border-radius: 50px;
   width: 90px;
   height: 40px;
   left: 200px;
   color: darkslategray;
 }
-/*  */
+
 .counter {
   display: flex;
   align-items: center;
@@ -70,7 +70,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px dashed yellow;
+  border: 4px dashed rgb(29, 1, 98);
   width: 50px;
   height: 30px;
   border-radius: 20px;
@@ -104,6 +104,7 @@ button {
     align-items: center;
     justify-content: center;
     margin-left: 15px;
+    margin-left: 33px;
   }
   .clock-container {
     font-size: 15px;
@@ -113,6 +114,7 @@ button {
     width: 70px;
     height: 40px;
     border-radius: 50px;
+    font-weight: 700;
   }
   .btn {
     height: auto;
@@ -121,25 +123,28 @@ button {
   }
   .counter {
     margin-bottom: 110px;
-    margin-left: 80px;
+    margin-left: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .reset {
     position: absolute;
-
-    right: 20px;
+    font-weight: 700;
+    right: 40px;
     padding: 10px;
     font-size: 23px;
     margin-bottom: 60px;
   }
   .h2-place {
     font-size: 45px;
+    font-weight: 700;
   }
   .cumle {
     margin-top: 0px;
-    font-size: 23px;
+    font-size: 30px;
     height: auto;
+    margin-left: 20px;
+    font-weight: 700;
   }
 }
