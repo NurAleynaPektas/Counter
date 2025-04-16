@@ -58,12 +58,12 @@ reset.addEventListener("click", function () {
 
 // Cümlelerin listesi
 const cumleler = [
-  "Allah'ım, sana hamd olsun.",
-  "Subhanallah, her şey senin kudretindedir.",
-  "La ilahe illallah, yalnızca Sen varsın.",
-  "Bismillah, her işin başı Senin adındır.",
-  "Allah'ın rahmeti üzerimize olsun.",
-  "Ya Allah, yardımınla her zorluğu aşarım.",
+  "Şüphesiz güçlükle beraber bir kolaylık vardır. ",
+  "Allah’ın rahmetinden ümidinizi kesmeyin.",
+  "Kim zerre kadar iyilik yapmışsa onu görür.",
+  "Kalpler ancak Allah’ı anmakla huzura kavuşur. .",
+  "Sabır ve namazla yardım dileyin. Allah, muhakkak ki sabredenlerle beraberdir.",
+  "Allah, kuluna yetmez mi?",
   "Rabbiniz, affedicidir, rahmet sahibidir.",
   "Şükredenlerin kalbi huzurludur.",
   "Zorluklarla birlikte kolaylık vardır.",
