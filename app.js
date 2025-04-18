@@ -11,7 +11,7 @@ btn.addEventListener("click", function changeColor() {
     "," +
     Math.round(Math.random() * 255) +
     ")";
-  btn.style.backgroundColor = color;
+  btn.style.color = color;
   console.log(`Renginiz : ${color}`);
   let hours = document.querySelector(".clock-container");
   hours.style.color = color;
