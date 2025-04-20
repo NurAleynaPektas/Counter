@@ -1,15 +1,8 @@
 body {
   margin: 0;
   background-color: rgb(248, 241, 241);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 100vh;
-  top: auto;
   font-family: "Dancing Script", serif;
   color: rgb(11, 62, 62);
-  user-select: none;
 }
 
 button {
@@ -40,14 +33,18 @@ button {
   }
 }
 
-.main-container {
+.zikirmatik {
+  min-width: 320px;
   width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
 }
 
-.clock-container {
+.zikirmatik-clock {
   position: relative;
   display: flex;
   align-items: center;
@@ -56,29 +53,25 @@ button {
   font-size: 15px;
   width: 90px;
   height: 40px;
-  left: 230px;
   color: darkslategray;
   box-shadow: 4px 4px 10px;
   border-radius: 50px;
   margin-top: 20px;
 }
 
-.counter {
+.zikirmatik-counter {
   display: flex;
   align-items: center;
   justify-content: center;
-min-width: 130px;
+  min-width: 130px;
   min-height: 130px;
-  width: max-content;
-  max-width: fit-content;
-  height: max-content;
   font-size: 90px;
-  margin-left: 110px;
+  margin-left: 60px;
   margin-top: 80px;
   cursor: pointer;
 }
 
-.reset {
+.zikirmatik-reset {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,17 +81,18 @@ min-width: 130px;
   height: 35px;
   box-shadow: 4px 4px 10px;
   border: none;
-  margin-top: 230px;
+  margin-top: 300px;
   cursor: pointer;
   margin-left: 20px;
+  
 }
-.btn {
+.zikirmatik-btn {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+
 }
 
-.cumle {
+.zikirmatik-cumle {
   width: auto;
   height: auto;
   display: flex;

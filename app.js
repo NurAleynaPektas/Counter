@@ -1,7 +1,9 @@
 let btn = document.querySelector("button");
-document.querySelector(".counter").textContent = localStorage.getItem("counter")
-  ? localStorage.getItem("counter")
-  : 0;
+
+document.querySelector(".zikirmatik-counter").textContent =
+  localStorage.getItem("zikirmatik-counter")
+    ? localStorage.getItem("zikirmatik-counter")
+    : 0;
 btn.addEventListener("click", function changeColor() {
   let color =
     "rgb(" +
@@ -13,22 +15,22 @@ btn.addEventListener("click", function changeColor() {
     ")";
   btn.style.color = color;
   console.log(`Renginiz : ${color}`);
-  let hours = document.querySelector(".clock-container");
+  let hours = document.querySelector(".zikirmatik-clock");
   hours.style.color = color;
-  let counter = document.querySelector(".counter");
+  let counter = document.querySelector(".zikirmatik-counter");
   counter.style.color = color;
-  let reset = document.querySelector(".reset");
+  let reset = document.querySelector(".zikirmatik-reset");
   reset.style.color = color;
-  let cumle = document.querySelector(".cumle");
+  let cumle = document.querySelector(".zikirmatik-cumle");
   cumle.style.color = color;
 });
 
 setInterval(() => {
-  document.querySelector(".clock-container").textContent =
+  document.querySelector(".zikirmatik-clock").textContent =
     new Date().toLocaleTimeString("tr-TR", { timeZone: "Europe/Istanbul" });
 }, 1000);
 
-let counter = document.querySelector(".counter");
+let counter = document.querySelector(".zikirmatik-counter");
 
 const counterChange = () => {
   let numbercounter = parseInt(counter.textContent);
@@ -44,10 +46,10 @@ const counterChange = () => {
   // titreşim süresine arttırılabilir.
 };
 
-const counterArea = document.querySelector(".counter");
+const counterArea = document.querySelector(".zikirmatik-counter");
 counterArea.addEventListener("click", counterChange);
 
-let reset = document.querySelector(".reset");
+let reset = document.querySelector(".zikirmatik-reset");
 reset.addEventListener("click", function () {
   let isConfirmed = window.confirm("Reset'lemek istediğinize eminmisiniz?");
   if (isConfirmed) {
@@ -83,4 +85,4 @@ const dayIndex = today.getFullYear() + today.getMonth() + today.getDate();
 const selectedCumle = cumleler[dayIndex % cumleler.length];
 
 // Cümleyi div içine yerleştir
-document.querySelector(".cumle").innerText = selectedCumle;
+document.querySelector(".zikirmatik-cumle").innerText = selectedCumle;
